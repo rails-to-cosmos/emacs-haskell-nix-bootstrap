@@ -10,8 +10,7 @@ Welcome to the =emacs-haskell-nix-bootstrap= repository! This repository is desi
 
 *** Prerequisites
 Before using =emacs-haskell-nix-bootstrap=, ensure you have the following installed:
-- [[https://github.com/commercialhaskell/stack][Stack]]
-- [[https://nixos.org/download.html][Nix]]
+- [[https://devenv.sh/][devenv]]
 - [[https://direnv.net/docs/installation.html][direnv]]
 
 *** Bootstrap Your Environment
