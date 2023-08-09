@@ -1,0 +1,45 @@
+* emacs-haskell-nix-bootstrap
+Welcome to the =emacs-haskell-nix-bootstrap= repository! This repository is designed to help you bootstrap a Haskell development environment leveraging the combined power of stack, nix, direnv, and Emacs.
+
+** Features
+- Uses =devenv= to setup the initial Haskell development environment.
+- Integrates with stack, nix, and direnv for a seamless Haskell development experience.
+- Provides an Emacs configuration tailored for Haskell development, with =lsp= and =haskell-mode= integrations.
+
+** Getting Started
+
+*** Prerequisites
+Before using =emacs-haskell-nix-bootstrap=, ensure you have the following installed:
+- [[https://github.com/commercialhaskell/stack][Stack]]
+- [[https://nixos.org/download.html][Nix]]
+- [[https://direnv.net/docs/installation.html][direnv]]
+
+*** Bootstrap Your Environment
+1. Clone the repository:
+#+begin_src shell
+git clone https://github.com/rails-to-cosmos/emacs-haskell-nix-bootstrap.git
+cd emacs-haskell-nix-bootstrap
+#+end_src
+
+2. Allow direnv environment:
+#+begin_src shell
+direnv allow
+#+end_src
+
+3. Install related packages and ensure the environment is working properly:
+#+begin_src shell
+devenv shell
+#+end_src
+
+*** Emacs Configuration
+This repository provides a tailored Emacs configuration for Haskell development. To use it:
+
+1. Copy or symlink =init-haskell.el= into your =.emacs.d= configuration.
+
+** Contribution
+If you find any issues or want to contribute, please open an issue or submit a pull request. Contributions are welcome!
+
+** Acknowledgments
+Special thanks to all the tools and communities behind =stack=, =nix=, =direnv=, =lsp=, and =haskell-mode= for making Haskell development smoother and more enjoyable!
+
+Happy Haskelling!
