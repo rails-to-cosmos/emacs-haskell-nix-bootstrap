@@ -13,13 +13,14 @@
     haskellPackages.hasktags
     haskell.compiler.ghc945
     haskell.packages.ghc945.haskell-language-server
+    haskell.packages.ghc945.hlint
   ];
 
   # https://devenv.sh/scripts/
   scripts.hello.exec = "echo hello from $GREET";
 
   enterShell = ''
-    hello fellow hacker
+    Hello fellow hacker
     ghc --version
   '';
 
