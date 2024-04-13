@@ -1,8 +1,6 @@
 { pkgs, ... }:
 
 {
-  # https://devenv.sh/basics/
-
   packages = with pkgs; [
     git
     zlib
