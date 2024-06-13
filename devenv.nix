@@ -1,13 +1,15 @@
 { pkgs, ... }:
 
 {
-  env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [pkgs.stdenv.cc.cc.lib];
-
   packages = with pkgs; [
-    git
     zlib
-    hpack
-    stack
+    universal-ctags
+    ripgrep
+
+    fzf
+    fd
+    ripgrep
+
     haskellPackages.hoogle
     haskellPackages.hasktags
     haskellPackages.haskdogs
@@ -20,5 +22,4 @@
     Hello fellow hacker
     ghc --version
   '';
-
 }
